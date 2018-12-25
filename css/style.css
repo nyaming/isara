@@ -1,5 +1,9 @@
 @charset "UTF-8";
 
+/* -----------------
+  リセットCSS
+  ------------------ */
+
 /**
  * html5doctor.com Reset Stylesheet v1.6.1 (http://html5doctor.com/html-5-reset-stylesheet/)
  * Richard Clark (http://richclarkdesign.com)
@@ -87,21 +91,73 @@ input, select {
     vertical-align:middle;
 }
 
+/* -----------------
+  全体の設定
+  ------------------ */
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.0rem;
+}
+
 *, *::before, *::after {
   box-sizing: border-box;
 }
+a:link,a:hover,a:active,a:visited {
+  text-decoration: none;
+}
 
-
-
+/* -----------------
+  ヘッダー
+  ------------------ */
 .header {
   width: 100%;
   height: 75px;
   background-color: #fff;
+  padding: 15px 0;
+  position: fixed;
+  top: 0;
+
 }
 
 .header .inner {
   max-width: 1170px;
+  margin: 0 auto;
+  position: relative;
 }
+
+.header .logo {
+  display: inline-block;
+  width: 128px;
+  height: 45px;
+  background: url("../images/isaralogo.png") no-repeat;
+  background-size: contain;
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.header p {
+  display: inline-block;
+  font-size: 1.4rem;
+  vertical-align: 8px;
+}
+
+.header .btn {
+  display: inline-block;
+  padding: 15px 40px;
+  border-radius: 20px;
+  background-color: plum;
+  font-size: 1.4rem;
+  position: absolute;
+  right: 0;
+  top: 2px;
+}
+
+
+
 
 .main {
   display: block;
