@@ -107,7 +107,33 @@ body {
 }
 a:link,a:hover,a:active,a:visited {
   text-decoration: none;
+  color: #333;
 }
+
+ul li {
+  list-style: none;
+}
+
+/* -----------------
+  テキストまとめて設定
+  ------------------ */
+  .txt_xs {
+    font-size: 1.2rem;
+    color: #333;
+  }
+  .txt_s {
+    font-size: 1.4rem;
+    color: #333;
+  }
+  .txt_m {
+    font-size: 2.0rem;
+    color: #333;
+  }
+  .txt_l {
+    font-size: 2.8rem;
+    color: #333;
+  }
+
 
 /* -----------------
   ヘッダー
@@ -116,10 +142,10 @@ a:link,a:hover,a:active,a:visited {
   width: 100%;
   height: 75px;
   background-color: #fff;
-  padding: 15px 0;
+  padding: 15px 10px;
   position: fixed;
   top: 0;
-
+  z-index: 1;
 }
 
 .header .inner {
@@ -141,7 +167,6 @@ a:link,a:hover,a:active,a:visited {
 
 .header p {
   display: inline-block;
-  font-size: 1.4rem;
   vertical-align: 8px;
 }
 
@@ -149,77 +174,462 @@ a:link,a:hover,a:active,a:visited {
   display: inline-block;
   padding: 15px 40px;
   border-radius: 20px;
-  background-color: plum;
-  font-size: 1.4rem;
+  background-color: salmon;
+  letter-spacing: 1px;
   position: absolute;
   right: 0;
   top: 2px;
 }
 
-
-
-
+/* -----------------
+  メイン
+  ------------------ */
 .main {
   display: block;
   width: 100%;
   height: 500px;
-  background-color: pink;
+  margin-top: 75px;
+  background: url("../images/main.jpg") no-repeat center center;
+  background-size: cover;
+  text-align: center;
+  padding-top: 110px;
 }
 
+.main .txt_l {
+  line-height: 1.8;
+}
+
+.main img {
+  width: 317px;
+  margin-bottom: 30px;
+}
+
+/* -----------------
+  コンバージョン
+  ------------------ */
 .conversion {
   width: 100%;
-  height: 559px;
-  background-color: skyblue;
+  height: auto;
+  background-color: #ebb94d;
+  text-align: center;
+  padding: 30px 0;
 }
 
+.conversion .txt_m {
+  color: #fff;
+  line-height: 1.8;
+}
+
+.conversion .txt_m .alert {
+  display: inline-block;
+  background-color: #fff;
+  border-radius: 5px;
+  color: crimson;
+  vertical-align: 0px;
+  line-height: 1.2;
+}
+
+.conversion .contact_btn {
+  display: inline-block;
+  padding: 30px 280px;
+  background-color: salmon;
+  margin: 45px 0;
+  border-radius: 44px;
+}
+
+.conversion .btn {
+  display: inline-block;
+  border-radius: 5px;
+  padding: 5px 7px;
+  color: #fff;
+}
+
+.conversion .snsbtn {
+  margin-top: 20px;
+}
+
+.conversion .tw {
+  background-color: deepskyblue;
+}
+.conversion .fb {
+  background-color: CornflowerBlue;
+}
+
+/* -----------------
+  イントロダクション
+  ------------------ */
 .introduction {
   width: 100%;
   height: 587px;
-  background-color: pink;
+  background-color: #fff;
+  background: url("../images/introbottom.jpg") no-repeat center center;
+  background-size: cover;
+  text-align: center;
+  padding: 40px 0;
 }
 
+/* ↓セクションタイトル用共通設定 */
+.section_title_frame {
+  width: 90%;
+  max-width: 860px;
+  position: relative;
+  margin: 0 auto 40px;
+  padding: 30px 0;
+  text-align: center;
+}
+
+.section_title {
+  line-height: 1.5;
+}
+
+.section_title::before {
+  content: "";
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  border-top: 4px solid gold;
+  border-left: 4px solid gold;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.section_title::after {
+  content: "";
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  border-bottom: 4px solid gold;
+  border-right: 4px solid gold;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+/* ↑セクションタイトル用共通設定 */
+
+.introduction .txt_m {
+  line-height: 1.5;
+  margin-bottom: 20px;
+  letter-spacing: 1px;
+}
+
+.introduction strong {
+  background: linear-gradient(transparent 70%, gold 0%);
+}
+
+/* -----------------
+  アバウト
+  ------------------ */
 .about {
   width: 100%;
-  height: 646px;
-  background-color: skyblue;
+  height: auto;
+  background-color: LightYellow;
+  text-align: center;
+  padding: 80px 0;
+  position: relative;
 }
 
+.about .point {
+  text-align: center;
+  margin-top: -120px;
+  padding-bottom: 40px;
+}
+.about .point span {
+  display: inline-block;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background-color: gold;
+  text-align: center;
+  line-height: 80px;
+  letter-spacing: 1px;
+  color: #fff;
+}
+
+.about .skills {
+  width: 90%;
+  max-width: 1170px;
+  margin: 0 auto;
+  border: 2px solid gold;
+  border-radius: 5px;
+  background-color: #fff;
+  margin-top: 30px;
+  padding: 30px;
+}
+
+.about .card {
+  display: inline-block;
+  margin: 25px 10px 20px;
+  text-align: center;
+}
+
+.about .card .txt_xs {
+  line-height: 1.5;
+  margin-top: 10px;
+  letter-spacing: 1px;
+}
+
+/* -----------------
+  アバウトセカンド
+  ------------------ */
 .aboutsecond {
   width: 100%;
   height: 441px;
-  background-color: pink;
+  background: url("../images/aboutsecondbg.jpg") no-repeat center center;
+  background-size: cover;
+  text-align: center;
+  padding: 80px 0;
+  color: #fff;
 }
 
+.aboutsecond > .txt_l {
+  line-height: 2.2;
+  color: #fff;
+  font-weight: bold;
+}
+.aboutsecond > .txt_m {
+  line-height: 1.8;
+  color: #fff;
+  font-weight: bold;
+}
+
+.aboutsecond > .txt_m strong {
+  color: gold;
+}
+
+.aboutsecond .steps {
+  max-width: 1170px;
+  margin: 30px auto 0;
+  display: flex;
+  justify-content: space-around;
+  font-weight: bold;
+}
+
+.aboutsecond .steps .step {
+  width: 31.9658%;
+  background-color: #fff;
+  border-radius: 5px;
+  padding: 20px 25px;
+}
+
+.aboutsecond .step .title {
+  background-color: gold;
+  border-radius: 5px;
+  line-height: 1.5;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+.aboutsecond .step .txt_s {
+  margin-top: 25px;
+}
+.aboutsecond .step .txt_m {
+  margin-top: 20px;
+}
+
+/* -----------------
+  アバウトサード
+  ------------------ */
 .aboutthird {
   width: 100%;
-  height: 144px;
-  background-color: skyblue;
+  height: auto;
+  background-color: DarkBlue;
+  text-align: center;
+  padding: 40px 0;
 }
 
+.aboutthird .txt_m {
+  color: #fff;
+  line-height: 1.5;
+  font-weight: bold;
+}
+.aboutthird .txt_m strong {
+  color: gold
+}
+
+/* -----------------
+  ラーニング
+  ------------------ */
 .learning {
   width: 100%;
   height: 506px;
-  background-color: pink;
+  background-color: #fff;
+  text-align: center;
+  padding: 80px 0;
 }
 
+.learning .txt_m {
+    margin: 50px 0;
+}
+
+.learning img {
+  width: 180px;
+  height: 180px;
+  margin: 0 15px 40px;
+}
+
+.learning .txt_s {
+    font-weight: bold;
+}
+
+/* -----------------
+  メリット
+  ------------------ */
 .merit {
   width: 100%;
-  height: 1018px;
-  background-color: skyblue;
+  height: auto;
+  padding: 80px 0 60px;
+  background-color: LightYellow;
 }
 
+.merit .section_title_frame {
+  text-align: center;
+}
+
+.merit .merits {
+  max-width: 1170px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 10px;
+}
+.merit .cards {
+  width: 30.7692%;
+}
+
+.merit .cards img {
+  width: 100%;
+}
+
+.merit .txt_m {
+  color: gold;
+  line-height: 2.0;
+  font-weight: bold;
+}
+.merit .txt_s {
+  line-height: 1.8;
+}
+
+.merit .support {
+  width: 95%;
+  max-width: 1170px;
+  border: 2px solid gold;
+  border-radius: 5px;
+  background-color: #fff;
+  margin: 50px auto 30px;
+  padding: 30px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.merit .txt_24 {
+  font-size: 2.4rem;
+  margin-bottom: 24px;
+  color: gold;
+}
+
+.merit .txt_s {
+  margin-bottom: 15px;
+}
+
+.merit .txt_xs {
+  text-align: center;
+  line-height: 1.5;
+}
+
+/* -----------------
+  運営メンバー
+  ------------------ */
 .teacher {
   width: 100%;
-  height: 1338px;
-  background-color: pink;
+  height: auto;
+  background: url("../images/teacherbg.jpg") no-repeat;
+  background-size: cover;
+  padding: 80px 0 40px;
 }
 
+.teacher > .txt_l {
+  color: #fff;
+  text-align: center;
+}
+
+.teacher > .txt_s {
+  color: #fff;
+  text-align: center;
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+.teacher .members {
+  max-width: 810px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.teacher .member {
+  width: 46.2962%;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.teacher .member img {
+  border-radius: 50%;
+  position: relative;
+  top: 38px;
+}
+
+.teacher .desc {
+  padding: 40px 30px;
+  border: 3px solid #fff;
+  line-height: 1.8;
+  }
+
+.teacher .desc .txt_s {
+  color: #fff;
+  margin-bottom: 10px;
+}
+
+.teacher .desc .txt_s.left {
+  text-align: left;
+}
+
+/* -----------------
+  「 本当に 」可能なのか？
+  ------------------ */
 .why {
   width: 100%;
   height: 270px;
-  background-color: skyblue;
+  background-color: gold;
+  padding: 40px 0;
 }
 
+.why .point {
+  text-align: center;
+}
+.why .point span {
+  display: inline-block;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background-color: #fff;
+  text-align: center;
+  line-height: 80px;
+  letter-spacing: 1px;
+  color: gold;
+}
+
+.why .section_title.txt_l {
+  color: #fff;
+}
+
+.why .section_title::before,
+.why .section_title::after {
+  border-color: #fff;
+}
+
+/* -----------------
+  アンサー　ここから！
+  ------------------ */
 .answer {
   width: 100%;
   height: 1077px;
