@@ -117,19 +117,19 @@ ul li {
 /* -----------------
   テキストまとめて設定
   ------------------ */
-  .txt_xs {
+  .txtxs {
     font-size: 1.2rem;
     color: #333;
   }
-  .txt_s {
+  .txts {
     font-size: 1.4rem;
     color: #333;
   }
-  .txt_m {
+  .txtm {
     font-size: 2.0rem;
     color: #333;
   }
-  .txt_l {
+  .txtl {
     font-size: 2.8rem;
     color: #333;
   }
@@ -195,7 +195,7 @@ ul li {
   padding-top: 110px;
 }
 
-.main .txt_l {
+.main .txtl {
   line-height: 1.8;
 }
 
@@ -215,12 +215,12 @@ ul li {
   padding: 30px 0;
 }
 
-.conversion .txt_m {
+.conversion .txtm {
   color: #fff;
   line-height: 1.8;
 }
 
-.conversion .txt_m .alert {
+.conversion .txtm .alert {
   display: inline-block;
   background-color: #fff;
   border-radius: 5px;
@@ -306,7 +306,7 @@ ul li {
 }
 /* ↑セクションタイトル用共通設定 */
 
-.introduction .txt_m {
+.introduction .txtm {
   line-height: 1.5;
   margin-bottom: 20px;
   letter-spacing: 1px;
@@ -362,7 +362,7 @@ ul li {
   text-align: center;
 }
 
-.about .card .txt_xs {
+.about .card .txtxs {
   line-height: 1.5;
   margin-top: 10px;
   letter-spacing: 1px;
@@ -381,18 +381,18 @@ ul li {
   color: #fff;
 }
 
-.aboutsecond > .txt_l {
+.aboutsecond > .txtl {
   line-height: 2.2;
   color: #fff;
   font-weight: bold;
 }
-.aboutsecond > .txt_m {
+.aboutsecond > .txtm {
   line-height: 1.8;
   color: #fff;
   font-weight: bold;
 }
 
-.aboutsecond > .txt_m strong {
+.aboutsecond > .txtm strong {
   color: gold;
 }
 
@@ -418,10 +418,10 @@ ul li {
   font-weight: bold;
   letter-spacing: 1px;
 }
-.aboutsecond .step .txt_s {
+.aboutsecond .step .txts {
   margin-top: 25px;
 }
-.aboutsecond .step .txt_m {
+.aboutsecond .step .txtm {
   margin-top: 20px;
 }
 
@@ -436,12 +436,12 @@ ul li {
   padding: 40px 0;
 }
 
-.aboutthird .txt_m {
+.aboutthird .txtm {
   color: #fff;
   line-height: 1.5;
   font-weight: bold;
 }
-.aboutthird .txt_m strong {
+.aboutthird .txtm strong {
   color: gold
 }
 
@@ -456,7 +456,7 @@ ul li {
   padding: 80px 0;
 }
 
-.learning .txt_m {
+.learning .txtm {
     margin: 50px 0;
 }
 
@@ -466,7 +466,7 @@ ul li {
   margin: 0 15px 40px;
 }
 
-.learning .txt_s {
+.learning .txts {
     font-weight: bold;
 }
 
@@ -499,12 +499,12 @@ ul li {
   width: 100%;
 }
 
-.merit .txt_m {
+.merit .txtm {
   color: gold;
   line-height: 2.0;
   font-weight: bold;
 }
-.merit .txt_s {
+.merit .txts {
   line-height: 1.8;
 }
 
@@ -520,17 +520,17 @@ ul li {
   font-weight: bold;
 }
 
-.merit .txt_24 {
+.merit .txt24 {
   font-size: 2.4rem;
   margin-bottom: 24px;
   color: gold;
 }
 
-.merit .txt_s {
+.merit .txts {
   margin-bottom: 15px;
 }
 
-.merit .txt_xs {
+.merit .txtxs {
   text-align: center;
   line-height: 1.5;
 }
@@ -546,12 +546,12 @@ ul li {
   padding: 80px 0 40px;
 }
 
-.teacher > .txt_l {
+.teacher > .txtl {
   color: #fff;
   text-align: center;
 }
 
-.teacher > .txt_s {
+.teacher > .txts {
   color: #fff;
   text-align: center;
   margin-top: 10px;
@@ -584,23 +584,26 @@ ul li {
   line-height: 1.8;
   }
 
-.teacher .desc .txt_s {
+.teacher .desc .txts {
   color: #fff;
   margin-bottom: 10px;
 }
 
-.teacher .desc .txt_s.left {
+.teacher .desc .txts.left {
   text-align: left;
 }
+
+
 
 /* -----------------
   「 本当に 」可能なのか？
   ------------------ */
 .why {
   width: 100%;
-  height: 270px;
+  height: auto;
   background-color: gold;
   padding: 40px 0;
+  position: relative;
 }
 
 .why .point {
@@ -618,7 +621,11 @@ ul li {
   color: gold;
 }
 
-.why .section_title.txt_l {
+.why .section_title_frame {
+  margin: 0 auto;
+}
+
+.why .section_title.txtl {
   color: #fff;
 }
 
@@ -627,31 +634,143 @@ ul li {
   border-color: #fff;
 }
 
+.why::after {
+  content: "";
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 25px 25px 0 25px;
+  border-color: gold transparent transparent transparent;
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -25px;
+}
+
 /* -----------------
-  アンサー　ここから！
+  アンサー
   ------------------ */
 .answer {
   width: 100%;
-  height: 1077px;
-  background-color: pink;
-}
-.class {
-  width: 100%;
-  height: 800px;
-  background-color: skyblue;
+  height: auto;
+  background-color: #fff;
+  padding: 50px 0 40px;
+  text-align: center;
 }
 
-.classbottom {
-  width: 100%;
-  height: 144px;
-  background-color: pink;
+.answer .txtl,
+.answer .txtm,
+.answer .txts {
+  margin-bottom: 30px;
 }
 
-.flow {
+.answer .txtl,
+.answer .txtm {
+  font-weight: bold;
+}
+
+.answer .messages {
+  max-width: 780px;
+  margin: 0 auto;
+  padding: 20px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.answer .messages .img {
+  width: 31.2820%;
+  border: 3px solid gold;
+}
+
+.answer .messages .comment {
+  display: inline-block;
+  width: 64.6153%;
+  text-align: left;
+  margin-top: 20px;
+}
+.answer .messages .comment p {
+  font-size: 1.8rem;
+  font-style: italic;
+  color: #777;
+  margin-bottom: 15px;
+  line-height: 1.5;
+}
+.answer .messages .comment p + p {
+  text-decoration: underline;
+}
+
+/* -----------------
+  クラス
+  ------------------ */
+  .class {
+  width: 100%;
+  height: auto;
+  background: url("../images/classbg.jpg") no-repeat center center;
+  background-size: cover;
+  padding: 40px 0 80px;
+  text-align: center;
+}
+
+.class > .txtl,
+.class > .txtm,
+.class > .txts {
+  margin-bottom: 30px;
+  color: #fff;
+}
+
+.class .contentslist {
+  display: inline-block;
+  width: 371px;
+  border: 2px solid DarkBlue;
+  border-radius: 5px;
+  margin: 20px 10px 0;
+  vertical-align: top;
+}
+
+.class .contentslist dt {
+  background-color: DarkBlue;
+  padding:15px 0;
+  color: #fff;
+}
+
+.class .contentslist dd {
+  background-color: #fff;
+  padding: 18px;
+  font-size: 1.6rem;
+  font-weight: bold;
+  border-bottom: 1px dotted #eee;
+}
+
+/* -----------------
+  クラスボトム
+  ------------------ */
+  .classbottom {
+  width: 100%;
+  height: auto;
+  background-color: DarkBlue;
+  text-align: center;
+  padding: 40px 0;
+}
+
+.classbottom .txtm {
+  color: #fff;
+  line-height: 1.5;
+}
+
+/* -----------------
+  フロー
+  ------------------ */
+  .flow {
   width: 100%;
   height: 1825px;
-  background-color: skyblue;
+  background-color: #fff;
+  padding: 40px 0 80px;
+  text-align: center;
 }
+
+
+
 .bangkok {
   width: 100%;
   height: 496px;
