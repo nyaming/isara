@@ -185,7 +185,7 @@ ul li {
   display: inline-block;
   padding: 15px 40px;
   border-radius: 20px;
-  background-color: salmon;
+  background-color: #da6b64;
   letter-spacing: 1px;
   position: absolute;
   right: 0;
@@ -243,7 +243,7 @@ ul li {
 .conversion .contact_btn {
   display: inline-block;
   padding: 30px 280px;
-  background-color: salmon;
+  background-color: #da6b64;
   margin: 45px 0;
   border-radius: 44px;
 }
@@ -298,8 +298,8 @@ ul li {
   display: inline-block;
   width: 50px;
   height: 50px;
-  border-top: 4px solid gold;
-  border-left: 4px solid gold;
+  border-top: 4px solid #ebb94d;
+  border-left: 4px solid #ebb94d;
   position: absolute;
   top: 0;
   left: 0;
@@ -309,8 +309,8 @@ ul li {
   display: inline-block;
   width: 50px;
   height: 50px;
-  border-bottom: 4px solid gold;
-  border-right: 4px solid gold;
+  border-bottom: 4px solid #ebb94d;
+  border-right: 4px solid #ebb94d;
   position: absolute;
   bottom: 0;
   right: 0;
@@ -324,7 +324,7 @@ ul li {
 }
 
 .introduction strong {
-  background: linear-gradient(transparent 70%, gold 0%);
+  background: linear-gradient(transparent 70%, #ebb94d 0%);
 }
 
 /* -----------------
@@ -333,7 +333,7 @@ ul li {
 .about {
   width: 100%;
   height: auto;
-  background-color: LightYellow;
+  background-color: #fef5e0;
   text-align: center;
   padding: 80px 0;
   position: relative;
@@ -349,7 +349,7 @@ ul li {
   width: 80px;
   height: 80px;
   border-radius: 50%;
-  background-color: gold;
+  background-color: #ebb94d;
   text-align: center;
   line-height: 80px;
   letter-spacing: 1px;
@@ -360,7 +360,7 @@ ul li {
   width: 90%;
   max-width: 1170px;
   margin: 0 auto;
-  border: 2px solid gold;
+  border: 2px solid #ebb94d;
   border-radius: 5px;
   background-color: #fff;
   margin-top: 30px;
@@ -404,7 +404,7 @@ ul li {
 }
 
 .aboutsecond > .txtm strong {
-  color: gold;
+  color: #ebb94d;
 }
 
 .aboutsecond .steps {
@@ -423,7 +423,7 @@ ul li {
 }
 
 .aboutsecond .step .title {
-  background-color: gold;
+  background-color: #ebb94d;
   border-radius: 5px;
   line-height: 1.5;
   font-weight: bold;
@@ -442,7 +442,7 @@ ul li {
 .aboutthird {
   width: 100%;
   height: auto;
-  background-color: DarkBlue;
+  background-color: #016ea9;
   text-align: center;
   padding: 40px 0;
 }
@@ -453,7 +453,7 @@ ul li {
   font-weight: bold;
 }
 .aboutthird .txtm strong {
-  color: gold
+  color: #ebb94d
 }
 
 /* -----------------
@@ -488,7 +488,7 @@ ul li {
   width: 100%;
   height: auto;
   padding: 80px 0 60px;
-  background-color: LightYellow;
+  background-color: #fef5e0;
 }
 
 .merit .section_title_frame {
@@ -511,7 +511,7 @@ ul li {
 }
 
 .merit .txtm {
-  color: gold;
+  color: #ebb94d;
   line-height: 2.0;
   font-weight: bold;
 }
@@ -522,7 +522,7 @@ ul li {
 .merit .support {
   width: 95%;
   max-width: 1170px;
-  border: 2px solid gold;
+  border: 2px solid #ebb94d;
   border-radius: 5px;
   background-color: #fff;
   margin: 50px auto 30px;
@@ -534,7 +534,7 @@ ul li {
 .merit .txt24 {
   font-size: 2.4rem;
   margin-bottom: 24px;
-  color: gold;
+  color: #ebb94d;
 }
 
 .merit .txts {
@@ -612,7 +612,7 @@ ul li {
 .why {
   width: 100%;
   height: auto;
-  background-color: gold;
+  background-color: #ebb94d;
   padding: 40px 0;
   position: relative;
 }
@@ -629,7 +629,7 @@ ul li {
   text-align: center;
   line-height: 80px;
   letter-spacing: 1px;
-  color: gold;
+  color: #ebb94d;
 }
 
 .why .section_title_frame {
@@ -651,7 +651,7 @@ ul li {
   height: 0;
   border-style: solid;
   border-width: 25px 25px 0 25px;
-  border-color: gold transparent transparent transparent;
+  border-color: #ebb94d transparent transparent transparent;
   position: absolute;
   top: 100%;
   left: 50%;
@@ -691,7 +691,7 @@ ul li {
 
 .answer .messages .img {
   width: 31.2820%;
-  border: 3px solid gold;
+  border: 3px solid #ebb94d;
 }
 
 .answer .messages .comment {
@@ -733,14 +733,14 @@ ul li {
 .class .contentslist {
   display: inline-block;
   width: 371px;
-  border: 2px solid DarkBlue;
+  border: 2px solid #016ea9;
   border-radius: 5px;
   margin: 20px 10px 0;
   vertical-align: top;
 }
 
 .class .contentslist dt {
-  background-color: DarkBlue;
+  background-color: #016ea9;
   padding:15px 0;
   color: #fff;
 }
@@ -759,7 +759,7 @@ ul li {
   .classbottom {
   width: 100%;
   height: auto;
-  background-color: DarkBlue;
+  background-color: #016ea9;
   text-align: center;
   padding: 40px 0;
 }
@@ -793,7 +793,7 @@ ul li {
 
 .step {
   width: 100%;
-  background-color: LightYellow;
+  background-color: #fef5e0;
   border-radius: 10px;
   padding: 30px 40px;
 
@@ -842,6 +842,7 @@ ul li {
 }
 
 .bangkok .inner {
+  width: 90%;
   max-width: 1170px;
   margin: 0 auto;
 }
@@ -862,35 +863,255 @@ ul li {
   margin-top: 30px;
 }
 
-
-
-
-
+/* -----------------
+  スペシャル
+  ------------------ */
 .special {
   width: 100%;
-  height: 704px;
-  background-color: skyblue;
+  height: auto;
+  background-color: #ebb94d;
+  padding: 50px 0 40px;
+  text-align: center;
 }
+
+.special > .txtl,
+.special > .txtm,
+.special > .txtsm,
+.special > .txts {
+  margin-bottom: 40px;
+}
+
+.special > .txtl,
+.special > .txtm,
+.special > .txtsm {
+font-weight: bold;
+}
+
+.special .txtsm span {
+  color: #fff;
+}
+
+.special .title {
+  margin: 0;
+  position: relative;
+  top: 16px;
+}
+
+.special .title span {
+  background-color: #ebb94d;
+}
+
+.specialbox {
+  max-width: 1170px;
+  margin: 0 auto;
+  border: 2px solid #fff;
+  padding: 40px 25px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.specialbox .content {
+  width: 250px;
+  height: 250px;
+  background-color: #fff;
+  border-radius: 50%;
+  padding: 60px 0;
+}
+
+.specialbox .content .txtm {
+  font-size: 2.2rem;
+  margin: 10px 0;
+  color: #ebb94d;
+}
+.specialbox .content .txts {
+  line-height: 1.5;
+  margin: 15px;
+  font-weight: bold;
+}
+
+/* -----------------
+  スペシャル詳細
+  ------------------ */
 .specialdetail {
   width: 100%;
-  height: 526px;
-  background-color: pink;
+  height: auto;
+  background: url("../images/specialdetail.jpg") no-repeat center center;
+  background-size: cover;
+  padding: 60px 0;
+  text-align: center;
 }
+
+.specialdetail p {
+  color: #fff;
+  font-weight: bold;
+}
+
+.specialdetail > .txtl {
+  margin-bottom: 25px;
+}
+.specialdetail .txtm {
+  line-height: 1.7;
+}
+
+.specialdetail .section_title_frame {
+  margin-top: 20px;
+  margin-bottom: 10px;
+  padding: 15px 30px;
+}
+
+.specialdetail .section_title {
+  color: #fff;
+}
+.specialdetail .section_title::before,
+.specialdetail .section_title::after {
+  border-color: #fff;
+}
+
+/* -----------------
+  メッセージ
+  ------------------ */
 .message {
   width: 100%;
-  height: 579px;
-  background-color: skyblue;
+  height: auto;
+  background-color: #fff;
+  text-align: center;
+  padding: 40px 0 80px;
 }
-.contactform {
+
+.message > .txtl,
+.message > .txtm,
+.message > .txtsm,
+.message > .txts {
+  margin-bottom: 40px;
+  font-weight: bold;
+}
+
+.messagebox {
+  max-width: 860px;
+  margin: 0 auto
+}
+.messagebox img {
+  width: 193px;
+  float: left;
+}
+.messagebox .p {
+  width: 75%;
+  float: right;
+  text-align: left;
+}
+
+.messagebox .p p {
+  margin-bottom: 10px;
+  line-height: 1.5;
+}
+
+/* -----------------
+  フォーム
+  ------------------ */
+  .contactform {
   width: 100%;
-  height: 705px;
-  background-color: pink;
+  height: auto;
+  background-color: #ebb94d;
+  text-align: center;
+  padding: 40px 0 80px;
 }
+
+.contactform > .txtl,
+.contactform > .txtm,
+.contactform > .txtsm,
+.contactform > .txts {
+  margin-bottom: 30px;
+  font-weight: bold;
+}
+
+.contactform form input,
+.contactform form textarea {
+  display: block;
+  width: 60%;
+  margin: 0 auto;
+  padding: 15px 10px;
+  border-radius: 5px;
+  border: none;
+  font-family: inherit;
+}
+
+.contactform form input[type="text"] {
+  margin-bottom: 25px;
+}
+.contactform form textarea {
+  margin: 40px auto;
+}
+.contactform form input[type="submit"] {
+  border-radius: 25px;
+  background-color: #da6b64;
+  font-weight: bold;
+  color: #fff;
+  cursor: pointer;
+}
+
+/* -----------------
+  よくある質問
+  ------------------ */
 .questions {
   width: 100%;
-  height: 1355px;
-  background-color: pink;
+  height: auto;
+  background-color: #fff;
+  text-align: center;
+  padding: 40px 0;
 }
+
+.accordion {
+  max-width: 1170px;
+  margin: 20px auto 0;
+  text-align: left;
+}
+
+.accordion span {
+  display: block;
+  padding: 20px;
+  border: 1px solid #eee;
+  font-weight: bold;
+  box-shadow: 0 1px 2px -2px rgba(0,0,0,0.3);
+}
+.accordion span:hover,
+.accordion span:active {
+  text-decoration: underline;
+}
+.accordion span::after {
+  display:inline-block;
+  font-family: "Font Awesome 5 Free";
+  content: "\f107";
+  float: right;
+  color: #ccc;
+}
+
+.accordion span.open::after {
+  transform: rotate(180deg);
+}
+
+.accordion ul {
+  display:none;
+}
+
+.accordion li ul li {
+  padding: 20px 20px 30px;
+  line-height: 1.5;
+  box-shadow: 0px 2px 10px -5px rgba(0,0,0,0.3);
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.accordion > li > p {
+  cursor:pointer;
+  margin-bottom: 5px;
+}
+
+
+
+
+/* -----------------
+  フッター
+  ------------------ */
 .footer {
   width: 100%;
   height: 179px;
