@@ -123,7 +123,53 @@ ul li {
 /* -----------------
   テキストまとめて設定
   ------------------ */
-  .txtxs {
+.txtxs {
+  font-size: 1.4rem;
+  color: #333;
+}
+.txts {
+  font-size: 1.6rem;
+  color: #333;
+}
+.txtm {
+  font-size: 1.8rem;
+  color: #333;
+}
+.txtl {
+  font-size: 2.0rem;
+  color: #333;
+}
+.txtxl {
+  font-size: 2.8rem;
+  color: #333;
+}
+.txtxs_w {
+  font-size: 1.4rem;
+  color: #fff;
+}
+.txts_w {
+  font-size: 1.6rem;
+  color: #fff;
+}
+.txtm_w {
+  font-size: 1.8rem;
+  color: #fff;
+}
+.txtl_w {
+  font-size: 2.0rem;
+  color: #fff;
+}
+.txtxl_w {
+  font-size: 2.8rem;
+  color: #fff;
+}
+.bold {
+  font-weight: bold;
+}
+
+
+
+  /* .txtxs {
     font-size: 1.2rem;
     color: #333;
   }
@@ -143,7 +189,7 @@ ul li {
   .txtl {
     font-size: 2.8rem;
     color: #333;
-  }
+  } */
 
 
 /* -----------------
