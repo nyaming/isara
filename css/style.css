@@ -100,6 +100,8 @@ html {
 
 body {
   font-size: 1.0rem;
+  font-family: "Hiragino Kaku Gothic Pro", Meiryo, Osaka, "MS PGothic", sans-serif;
+  letter-spacing: 1px;
 }
 
 *, *::before, *::after {
@@ -107,7 +109,7 @@ body {
 }
 a:link,a:hover,a:active,a:visited {
   text-decoration: none;
-  color: #333;
+  /* color: #333; */
 }
 
 ul li {
@@ -121,7 +123,7 @@ ul li {
 }
 
 /* -----------------
-  テキストまとめて設定
+  まとめて設定
   ------------------ */
 .txtxs {
   font-size: 1.4rem;
@@ -167,6 +169,12 @@ ul li {
   font-weight: bold;
 }
 
+.mt20 {
+  margin-top: 20px;
+}
+.mb20 {
+  margin-bottom: 20px;
+}
 
 
   /* .txtxs {
@@ -232,10 +240,12 @@ ul li {
   padding: 15px 40px;
   border-radius: 20px;
   background-color: #da6b64;
-  letter-spacing: 1px;
   position: absolute;
   right: 0;
   top: 2px;
+}
+.header .btn:hover {
+  background-color: #D84940;
 }
 
 /* -----------------
@@ -245,15 +255,15 @@ ul li {
   display: block;
   width: 100%;
   height: 500px;
-  margin-top: 75px;
   background: url("../images/main.jpg") no-repeat center center;
   background-size: cover;
+  margin-top: 75px;
+  padding-top: 100px;
   text-align: center;
-  padding-top: 110px;
 }
 
-.main .txtl {
-  line-height: 1.8;
+.main .txtxl {
+  line-height: 2.0;
 }
 
 .main img {
@@ -268,12 +278,11 @@ ul li {
   width: 100%;
   height: auto;
   background-color: #ebb94d;
-  text-align: center;
   padding: 30px 0;
+  text-align: center;
 }
 
-.conversion .txtm {
-  color: #fff;
+.conversion .txtl_w {
   line-height: 1.8;
 }
 
@@ -284,6 +293,8 @@ ul li {
   color: crimson;
   vertical-align: 0px;
   line-height: 1.2;
+  margin-top: 20px;
+  font-weight: 600;
 }
 
 .conversion .contact_btn {
@@ -293,6 +304,9 @@ ul li {
   margin: 45px 0;
   border-radius: 44px;
 }
+.conversion .contact_btn:hover {
+  background-color: #D84940;
+}
 
 .conversion .btn {
   display: inline-block;
@@ -301,10 +315,7 @@ ul li {
   color: #fff;
 }
 
-.conversion .snsbtn {
-  margin-top: 20px;
-}
-.conversion .snsbtn i {
+.conversion .btn i {
   margin-right: 2px;
 }
 
@@ -322,21 +333,20 @@ ul li {
 .introduction {
   width: 100%;
   height: 587px;
-  background-color: #fff;
   background: url("../images/introbottom.jpg") no-repeat center center;
   background-size: cover;
-  text-align: center;
   padding: 40px 0;
+  text-align: center;
 }
 
 /* ↓セクションタイトル用共通設定 */
 .section_title_frame {
   width: 90%;
   max-width: 860px;
-  position: relative;
   margin: 0 auto 40px;
   padding: 30px 0;
   text-align: center;
+  position: relative;
 }
 
 .section_title {
@@ -367,10 +377,8 @@ ul li {
 }
 /* ↑セクションタイトル用共通設定 */
 
-.introduction .txtm {
+.introduction .txtl {
   line-height: 1.5;
-  margin-bottom: 20px;
-  letter-spacing: 1px;
 }
 
 .introduction strong {
@@ -384,13 +392,12 @@ ul li {
   width: 100%;
   height: auto;
   background-color: #fef5e0;
-  text-align: center;
   padding: 80px 0;
+  text-align: center;
   position: relative;
 }
 
 .about .point {
-  text-align: center;
   margin-top: -120px;
   padding-bottom: 40px;
 }
@@ -398,11 +405,9 @@ ul li {
   display: inline-block;
   width: 80px;
   height: 80px;
-  border-radius: 50%;
-  background-color: #ebb94d;
-  text-align: center;
   line-height: 80px;
-  letter-spacing: 1px;
+  background-color: #ebb94d;
+  border-radius: 50%;
   color: #fff;
 }
 
@@ -426,7 +431,6 @@ ul li {
 .about .card .txtxs {
   line-height: 1.5;
   margin-top: 10px;
-  letter-spacing: 1px;
 }
 
 /* -----------------
@@ -434,27 +438,20 @@ ul li {
   ------------------ */
 .aboutsecond {
   width: 100%;
-  height: 441px;
+  height: auto;
   background: url("../images/aboutsecondbg.jpg") no-repeat center center;
   background-size: cover;
-  text-align: center;
   padding: 80px 0;
-  color: #fff;
+  text-align: center;
 }
 
-.aboutsecond > .txtl {
-  line-height: 2.2;
-  color: #fff;
-  font-weight: bold;
-}
-.aboutsecond > .txtm {
+.aboutsecond > .txtl_w {
   line-height: 1.8;
-  color: #fff;
-  font-weight: bold;
 }
 
-.aboutsecond > .txtm strong {
+.aboutsecond  strong {
   color: #ebb94d;
+  font-weight: normal;
 }
 
 .aboutsecond .steps {
@@ -462,7 +459,6 @@ ul li {
   margin: 30px auto 0;
   display: flex;
   justify-content: space-around;
-  font-weight: bold;
 }
 
 .aboutsecond .steps .step {
@@ -476,16 +472,7 @@ ul li {
   background-color: #ebb94d;
   border-radius: 5px;
   line-height: 1.5;
-  font-weight: bold;
-  letter-spacing: 1px;
 }
-.aboutsecond .step .txts {
-  margin-top: 25px;
-}
-.aboutsecond .step .txtm {
-  margin-top: 20px;
-}
-
 /* -----------------
   アバウトサード
   ------------------ */
@@ -497,13 +484,11 @@ ul li {
   padding: 40px 0;
 }
 
-.aboutthird .txtm {
-  color: #fff;
+.aboutthird .txtm_w {
   line-height: 1.5;
-  font-weight: bold;
 }
-.aboutthird .txtm strong {
-  color: #ebb94d
+.aboutthird strong {
+  color: #ebb94d;
 }
 
 /* -----------------
@@ -511,14 +496,15 @@ ul li {
   ------------------ */
 .learning {
   width: 100%;
-  height: 506px;
+  height: auto;
   background-color: #fff;
-  text-align: center;
   padding: 80px 0;
+  text-align: center;
 }
 
-.learning .txtm {
-    margin: 50px 0;
+.learning .txtxl,
+.learning .txtl {
+    margin-bottom: 50px;
 }
 
 .learning img {
@@ -537,20 +523,16 @@ ul li {
 .merit {
   width: 100%;
   height: auto;
-  padding: 80px 0 60px;
   background-color: #fef5e0;
-}
-
-.merit .section_title_frame {
-  text-align: center;
+  padding: 80px 0 60px;
 }
 
 .merit .merits {
   max-width: 1170px;
   margin: 0 auto;
+  padding: 0 10px;
   display: flex;
   justify-content: space-between;
-  padding: 0 10px;
 }
 .merit .cards {
   width: 30.7692%;
@@ -560,10 +542,9 @@ ul li {
   width: 100%;
 }
 
-.merit .txtm {
+.merit .cards .txtl {
   color: #ebb94d;
   line-height: 2.0;
-  font-weight: bold;
 }
 .merit .txts {
   line-height: 1.8;
@@ -578,12 +559,9 @@ ul li {
   margin: 50px auto 30px;
   padding: 30px;
   text-align: center;
-  font-weight: bold;
 }
 
-.merit .txt24 {
-  font-size: 2.4rem;
-  margin-bottom: 24px;
+.merit .txtxl {
   color: #ebb94d;
 }
 
@@ -605,18 +583,7 @@ ul li {
   background: url("../images/teacherbg.jpg") no-repeat;
   background-size: cover;
   padding: 80px 0 40px;
-}
-
-.teacher > .txtl {
-  color: #fff;
   text-align: center;
-}
-
-.teacher > .txts {
-  color: #fff;
-  text-align: center;
-  margin-top: 10px;
-  font-weight: bold;
 }
 
 .teacher .members {
@@ -629,8 +596,6 @@ ul li {
 
 .teacher .member {
   width: 46.2962%;
-  text-align: center;
-  margin-bottom: 20px;
 }
 
 .teacher .member img {
@@ -645,17 +610,13 @@ ul li {
   line-height: 1.8;
   }
 
-.teacher .desc .txts {
-  color: #fff;
+.teacher .desc .txts_w {
   margin-bottom: 10px;
 }
 
 .teacher .desc .txts.left {
   text-align: left;
 }
-
-
-
 /* -----------------
   「 本当に 」可能なのか？
   ------------------ */
@@ -665,29 +626,21 @@ ul li {
   background-color: #ebb94d;
   padding: 40px 0;
   position: relative;
-}
-
-.why .point {
   text-align: center;
 }
+
 .why .point span {
   display: inline-block;
   width: 80px;
   height: 80px;
+  line-height: 80px;
   border-radius: 50%;
   background-color: #fff;
-  text-align: center;
-  line-height: 80px;
-  letter-spacing: 1px;
   color: #ebb94d;
 }
 
 .why .section_title_frame {
   margin: 0 auto;
-}
-
-.why .section_title.txtl {
-  color: #fff;
 }
 
 .why .section_title::before,
@@ -717,17 +670,6 @@ ul li {
   background-color: #fff;
   padding: 50px 0 40px;
   text-align: center;
-}
-
-.answer .txtl,
-.answer .txtm,
-.answer .txts {
-  margin-bottom: 30px;
-}
-
-.answer .txtl,
-.answer .txtm {
-  font-weight: bold;
 }
 
 .answer .messages {
@@ -773,13 +715,6 @@ ul li {
   text-align: center;
 }
 
-.class > .txtl,
-.class > .txtm,
-.class > .txts {
-  margin-bottom: 30px;
-  color: #fff;
-}
-
 .class .contentslist {
   display: inline-block;
   width: 371px;
@@ -792,7 +727,6 @@ ul li {
 .class .contentslist dt {
   background-color: #016ea9;
   padding:15px 0;
-  color: #fff;
 }
 
 .class .contentslist dd {
@@ -814,8 +748,7 @@ ul li {
   padding: 40px 0;
 }
 
-.classbottom .txtm {
-  color: #fff;
+.classbottom .txtm_w {
   line-height: 1.5;
 }
 
@@ -913,6 +846,9 @@ ul li {
   margin-top: 30px;
 }
 
+.txt24 {
+  font-size: 2.4rem;
+}
 /* -----------------
   スペシャル
   ------------------ */
@@ -977,6 +913,10 @@ font-weight: bold;
   line-height: 1.5;
   margin: 15px;
   font-weight: bold;
+}
+
+.txt24 {
+  font-size: 2.4rem;
 }
 
 /* -----------------
@@ -1172,7 +1112,6 @@ font-weight: bold;
 }
 .footer p {
   font-size: 1.0rem;
-  letter-spacing: 1px;
   line-height: 1.5;
 }
 .footer .btn {
