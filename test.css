@@ -166,7 +166,7 @@ ul li {
   height: 100px;
 }
 
-@media screen and (max-width: 650px) {
+/* @media screen and (max-width: 650px) {
   .flexbox {
     display: block;
   }
@@ -176,4 +176,4 @@ ul li {
   .right, .left {
     width: 100%;
   }
-}
+} */
